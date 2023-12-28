@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	height: 100vh;
+	overflow: hidden;
+
+	position: relative;
+	background: #023e8a;
+}
+
+.snow-ball {
+	background: #ade8f4;
+	color: #ade8f4;
+	background: transparent;
+	font-size: 3rem;
+
+	position: absolute;
+	/* top: 0%; */
+	/* animation: fallingRight 2s linear infinite; */
+}
+
+@keyframes fallingRight {
+	0% {
+		top: -10%;
+	}
+
+	100% {
+		transform: translateX(800%);
+		top: 100%;
+	}
+}
+
+@keyframes fallingLeft {
+	0% {
+		top: -10%;
+	}
+
+	100% {
+		transform: translateX(-800%);
+		top: 100%;
+	}
+}
+
+/* snow-man */
+.man {
+	position: absolute;
+	bottom: 35%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.head {
+	position: absolute;
+	top: 50px;
+	background: #fff;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.head div {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	background: #642328;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.head div:last-child {
+	left: 45px;
+}
+
+.band {
+	z-index: 999;
+	position: absolute;
+	top: 110px;
+	width: 80px;
+	height: 15px;
+	background: #ff8d7a;
+}
+
+.ball-1 {
+	position: absolute;
+	background: #fff;
+	top: 110px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.ball-2 {
+	position: absolute;
+	background: #fff;
+	top: 150px;
+	width: 160px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.bottom {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	top: 250px;
+	background: #023e8a;
+}
