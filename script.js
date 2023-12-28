@@ -25,6 +25,5 @@ const makingSnow = setInterval(() => {
   if (snowFlakeCounter > 70) {
     clearInterval(makingSnow);
   }
-  console.log("ss");
   createSnowFlakes();
 }, 1000);
